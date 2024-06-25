@@ -1,4 +1,4 @@
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls='eza --color=always --group-directories-first --icons'
 
 # See cool eza aliases here 
