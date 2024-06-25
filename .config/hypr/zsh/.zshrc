@@ -1,11 +1,12 @@
-export ZDOTDIR=$HOME/.config/zsh
+ZDOTDIR=$HOME/.config/zsh
 source $HOME/.config/zsh/.zshrc
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=100000
+HISTSIZE=1000000
+SAVEHIST=1000000
 setopt beep extendedglob nomatch notify
+setopt APPEND_HISTORY
 bindkey -e
 
 
