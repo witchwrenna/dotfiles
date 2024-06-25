@@ -5,7 +5,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
 setopt beep extendedglob nomatch notify
-setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
 
 bindkey -e
 
