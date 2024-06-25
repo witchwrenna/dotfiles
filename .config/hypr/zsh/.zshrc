@@ -1,5 +1,4 @@
-ZDOTDIR=$HOME/.config/zsh
-source $HOME/.config/zsh/.zshrc
+source $ZDOTDIR/.aliases
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
