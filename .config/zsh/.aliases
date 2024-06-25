@@ -1,0 +1,5 @@
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ls='eza --color=always --group-directories-first --icons'
+
+# See cool eza aliases here 
+# https://gist.github.com/AppleBoiy/04a249b6f64fd0fe1744aff759a0563b
