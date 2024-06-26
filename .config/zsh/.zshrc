@@ -19,4 +19,4 @@ compinit
 # End of lines added by compinstall
 eval "$(starship init zsh)"
 source <(fzf --zsh)
-plugins=(zsh-syntax-highlighting)
+source /usr/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
