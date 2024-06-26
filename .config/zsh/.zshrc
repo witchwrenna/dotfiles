@@ -17,6 +17,8 @@ zstyle :compinstall filename '/home/lilith/.config/zsh/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
 eval "$(starship init zsh)"
 source <(fzf --zsh)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
