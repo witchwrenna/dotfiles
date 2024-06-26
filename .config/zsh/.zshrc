@@ -6,7 +6,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 setopt beep extendedglob nomatch notify
 setopt INC_APPEND_HISTORY
-
+export LESS='-R --use-color -Dd+r$Du+b$'
 bindkey -e
 
 
