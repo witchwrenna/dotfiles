@@ -1,5 +1,6 @@
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls='eza --color=always --group-directories-first --icons'
+alias cat='bat --paging=never'
 
 # See cool eza aliases here 
 # https://gist.github.com/AppleBoiy/04a249b6f64fd0fe1744aff759a0563b
