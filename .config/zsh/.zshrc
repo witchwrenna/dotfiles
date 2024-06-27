@@ -7,7 +7,8 @@ SAVEHIST=1000000
 setopt beep extendedglob nomatch notify
 setopt INC_APPEND_HISTORY
 export LESS='-R --use-color -Dd+r$Du+b$'
-bindkey -e
+
+# bindkey -e
 
 #This section gets keys working the way you'd expect. ctrl+arrow, home/end, etc.
 # create a zkbd compatible hash;
@@ -45,6 +46,9 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
+
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
 if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
@@ -54,7 +58,6 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
-
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
