@@ -76,6 +76,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #fixing colour problem with kitty/zsh-syntax-highlighting
+#See https://github.com/zsh-users/zsh-syntax-highlighting/issues/780#issuecomment-727546480
 if [[ $TERM == "xterm-kitty" ]]; then
     ZSH_HIGHLIGHT_STYLES[comment]="fg=blue,bold"
 fi
