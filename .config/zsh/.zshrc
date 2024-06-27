@@ -74,3 +74,8 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#fixing colour problem with kitty/zsh-syntax-highlighting
+if [[ $TERM == "xterm-kitty" ]]; then
+    ZSH_HIGHLIGHT_STYLES[comment]="fg=blue,bold"
+fi
