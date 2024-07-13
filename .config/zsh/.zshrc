@@ -8,6 +8,8 @@ setopt beep extendedglob nomatch notify
 setopt INC_APPEND_HISTORY
 export LESS='-R --use-color -Dd+r$Du+b$'
 
+#Using nvim as default editor
+export EDITOR="/usr/bin/nvim"
 
 # bindkey -e
 
