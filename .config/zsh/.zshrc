@@ -8,6 +8,7 @@ setopt beep extendedglob nomatch notify
 setopt INC_APPEND_HISTORY
 export LESS='-R --use-color -Dd+r$Du+b$'
 
+
 # bindkey -e
 
 #This section gets keys working the way you'd expect. ctrl+arrow, home/end, etc.
