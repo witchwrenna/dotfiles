@@ -109,9 +109,9 @@
 	
 	"network": {
         	"format-wifi": "󰤨",
-        	"format-ethernet": " {ifname}: Online",
-        	"format-linked": " {ifname} (No IP)",
-        	"format-disconnected": "󰤭",
+        	"format-ethernet": " Online",
+        	"format-linked": " (No IP)",
+        	"format-disconnected":"󰈂 OFFLINE",
         	"format-alt": " {ifname}: {ipaddr}/{cidr}",
           "tooltip-format": "{essid}",
           "on-click-right": "nm-connection-editor"

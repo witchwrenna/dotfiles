@@ -3,7 +3,7 @@
     border-radius: 0px;
     /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
     font-family: Iosevka, FontAwesome, Noto Sans CJK;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     min-height: 0;
 }
@@ -116,7 +116,17 @@ window#waybar {
     border-radius: 8px;
     margin-right: 5px;
 }
+#network.linked {
+    color: red;
+    border-radius: 8px;
+    margin-right: 5px;
+  }
+#network.disconnected{
+    color: red;
+    border-radius: 8px;
+    margin-right: 5px;
 
+}
 #pulseaudio {
     color: #f4d9e1;
     border-radius: 8px;
