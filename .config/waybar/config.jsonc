@@ -1,13 +1,13 @@
 {
     "position": "top",
     "layer": "top",
-    "height": 16,
+    "height": 40,
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
-    "modules-center": ["cpu", "memory", "disk"],
+    "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel" ],
+    "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "network", "pulseaudio", "clock"],
     // Modules configuration
 	"clock": {
@@ -16,7 +16,7 @@
         	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         	"format-alt": " {:%d/%m}"
 	},
-	
+
 
 	"hyprland/workspaces": {
         "active-only": false,
@@ -38,6 +38,12 @@
     "sort-by-number": true
     },
     },
+
+    "hyprland/window": {
+    "format": "{}",
+    "max-length": 360,
+    "separate-outputs": true,
+  },
 
     "custom/playerctl": {
       "format": "{icon}",
@@ -130,16 +136,10 @@
 		"format-icons": {
 			"default": ["󰕿", "󰖀", "󰕾"]
 		},
-		"on-click": "bash ~/.scripts/volume mute",
-    "on-scroll-up": "bash ~/.scripts/volume up",
-    "on-scroll-down": "bash ~/.scripts/volume down",
     "scroll-step": 5,
-		"on-click-right": "pavucontrol"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle", 
+    "on-click-right": "pavucontrol"
   },
-
-
-
-
 
   }
 }
