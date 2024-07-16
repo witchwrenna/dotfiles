@@ -67,6 +67,9 @@ fi
 zstyle :compinstall filename '/home/lilith/.config/zsh/.zshrc'
 zstyle ':completion:*' menu select
 
+autoload -U select-word-style
+select-word-style bash
+
 autoload -Uz compinit promptinit
 compinit
 promptinit
