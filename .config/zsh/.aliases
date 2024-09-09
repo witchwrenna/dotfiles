@@ -3,6 +3,7 @@ alias ls='eza --color=always --group-directories-first --icons'
 alias cat='bat'
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
+alias icat="kitten icat"
 
 # See cool eza aliases here 
 # https://gist.github.com/AppleBoiy/04a249b6f64fd0fe1744aff759a0563b

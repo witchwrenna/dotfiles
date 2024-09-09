@@ -2,19 +2,19 @@
     "position": "top",
     "layer": "top",
     "height": 40,
-    "margin-top": 0,
+    "margin-top": 6,
+    "margin-left": 10,
     "margin-bottom": 0,
-    "margin-left": 0,
-    "margin-right": 0,
+    "margin-right": 10,
+    "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel" ],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "network", "pulseaudio", "clock"],
+    "modules-right": ["tray","memory", "network", "pulseaudio", "clock"],
     // Modules configuration
 	"clock": {
-		"format": " {:%H:%M}",
-		"tooltip": "true",
-        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        	"format-alt": " {:%d/%m}"
+        "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
+        "format": "<span color='#bf616a'> </span>{:%I:%M %p}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
 	},
 
 
@@ -27,11 +27,6 @@
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-//			"1": "一",
-//			"2": "二",
-//			"3": "三",
-//			"4": "四",
-//			"5": "五",
 			"urgent": "",
 			"active": "",
 			"default": "󰧞",
@@ -143,3 +138,5 @@
 
   }
 }
+
+
